@@ -1,2 +1,2 @@
 reference	ref_data	fasta	gtf	extra_spliced	extra_unspliced
-human-toy-download-ref	randommeaninglessfillerstring	genomic_data/fasta/genome.fa	genomic_data/genes/genes.gtf			
+human-toy-download-ref	https://umd.box.com/shared/static/7v6mof9emgudmuczc4lnwz4oou7xayks.gz	/fasta/genome.fa	genes/genes.gtf
