@@ -213,8 +213,10 @@ process write_description {
         path quant_dir
 
     output:
-        path "dataset_description.json", emit: dataset_description
-    
+        tuple path("dataset_description.json"),
+        val("${fastq_MD5sum}_fry_${filt_type}_quant_usa_cr-like")
+        
+       
     exec:
         // from here
         // https://groups.google.com/g/nextflow/c/tp_b1p0DBE4?pli=1

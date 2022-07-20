@@ -3,6 +3,8 @@ workflow salmon_map {
         samp 
 
     main: 
+        samp.view()
+        
         download_fastq(samp) | salmon_map_rad
 
     emit:
@@ -78,7 +80,7 @@ process download_fastq {
             wget ${fastq_url} -P ${fastq_MD5sum}_cfastqs
         done
         mkdir -p ${fastq_MD5sum}_fastqs
-        tar xf ${fastq_MD5sum}_cfastqs/\$(ls ${fastq_MD5sum}_cfastqs) --strip-components=1 -C ${fastq_MD5sum}_fastqs
+        gunzip -c ${fastq_MD5sum}_cfastqs | tar xf ${fastq_MD5sum}_cfastqs/\$(ls ${fastq_MD5sum}_cfastqs) --strip-components=1 -C ${fastq_MD5sum}_fastqs
         rm -rf ${fastq_MD5sum}_cfastqs
     """
 

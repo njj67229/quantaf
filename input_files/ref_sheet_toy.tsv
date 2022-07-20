@@ -1,2 +1,2 @@
-reference	ref_data	fasta	gtf
-human-toy-download-ref	randommeaninglessfillerstring	genomic_data/fasta/genome.fa	genomic_data/genes/genes.gtf
+reference	ref_data	fasta	gtf	extra_spliced	extra_unspliced
+human-toy-download-ref	randommeaninglessfillerstring	genomic_data/fasta/genome.fa	genomic_data/genes/genes.gtf			

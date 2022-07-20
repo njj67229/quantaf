@@ -160,8 +160,7 @@ process standardize_files {
         }
         """
 
-        """
-        
+        """    
 }
 
 /*
@@ -381,10 +380,12 @@ workflow preprocess {
                                 row.ref_data, row.fasta, row.gtf)
                 }
     process_ref_data(ref_sheet)
+    
     standardize_files(process_ref_data.out)
-
+    
     standard_fasta(standardize_files.out)
     standard_gtf(standard_fasta.out)
+    
     //prepare commands for pyroe based on user input in config sheet
     prep_commands(standard_gtf.out)
 

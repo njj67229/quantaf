@@ -3,6 +3,7 @@ nextflow.enable.dsl=2
 include {salmon_map} from "./modules/salmon_map"
 include {preprocess} from './modules/preprocess'
 include {af} from './modules/af'
+include {af_qc} from './modules/af_qc'
 
 workflow {
 
@@ -56,4 +57,5 @@ workflow {
       salmon_map(data) 
       af(salmon_map.out, Channel.value("unfilt"))
       af.out.view()
+      af_qc(af.out)
 }
