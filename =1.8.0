@@ -1,0 +1,37 @@
+Collecting package metadata (current_repodata.json): ...working... done
+Solving environment: ...working... done
+
+## Package Plan ##
+
+  environment location: /cbcbhomes/njacobi/miniconda3/envs/web_app
+
+  added / updated specs:
+    - bioconda::salmon
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    boost-1.78.0               |  py310hc4a4660_0         358 KB  conda-forge
+    boost-cpp-1.78.0           |       h75c5d50_1        17.1 MB  conda-forge
+    salmon-0.6.0               |                1         4.2 MB  bioconda
+    tbb-2020.2                 |       h4bd325d_4         1.5 MB  conda-forge
+    ------------------------------------------------------------
+                                           Total:        23.2 MB
+
+The following NEW packages will be INSTALLED:
+
+  boost              conda-forge/linux-64::boost-1.78.0-py310hc4a4660_0
+  boost-cpp          conda-forge/linux-64::boost-cpp-1.78.0-h75c5d50_1
+  salmon             bioconda/linux-64::salmon-0.6.0-1
+  tbb                conda-forge/linux-64::tbb-2020.2-h4bd325d_4
+
+
+Proceed ([y]/n)? 
+
+Downloading and Extracting Packages
+tbb-2020.2           | 1.5 MB    |            |   0% tbb-2020.2           | 1.5 MB    | 1          |   1% tbb-2020.2           | 1.5 MB    | ########## | 100% 
+boost-1.78.0         | 358 KB    |            |   0% boost-1.78.0         | 358 KB    | ########## | 100% boost-1.78.0         | 358 KB    | ########## | 100% 
+salmon-0.6.0         | 4.2 MB    |            |   0% salmon-0.6.0         | 4.2 MB    | ######9    |  69% salmon-0.6.0         | 4.2 MB    | ########## | 100% 
+boost-cpp-1.78.0     | 17.1 MB   |            |   0% boost-cpp-1.78.0     | 17.1 MB   | 9          |  10% boost-cpp-1.78.0     | 17.1 MB   | ####       |  41% boost-cpp-1.78.0     | 17.1 MB   | #######5   |  76% 
